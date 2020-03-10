@@ -41,13 +41,13 @@ api.add_resource(Payment, '/')
 
 # Python Usage
 # from requests import get
-# card_details = {
-    # 'card_number':4242420000000000,
-    # 'card_cvc':987, 
-    # 'card_name':'Misionsio Salinas',
-    # 'card_expiration_date':'12/2020'
-# }
+card_details = {
+    'card_number':4242420000000000,
+    'card_cvc':987,
+    'card_name':'Misionsio Salinas',
+    'card_expiration_date':'12/2020'
+}
 # response = get('http://localhost:5000/', data=card_details).json()
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
